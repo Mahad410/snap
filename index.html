@@ -11,44 +11,89 @@
 </head>
 <body>
 <main>
-<header>
-    <nav>
-        <img src="images/logo.svg" alt="logo" class="logo">
-        <ul class="menu_nav">
-            <li id="feature">
-                <a href="#" class="feature" id="drop_feature">Features<span class="drop_img" ><img id="drop_img_feat" src="./images/icon-arrow-down.svg"></span></a>
-                <div class="drop_menu drop_menu_hide">
-                    <ul>
-                        <li><a href="#"><img src="./images/icon-todo.svg">Todo List</a></li>
-                        <li><a href="#"><img src="./images/icon-calendar.svg">Calender</a></li>
-                        <li><a href="#"><img src="./images/icon-reminders.svg">Reminders</a></li>
-                        <li><a href="#"><img src="./images/icon-planning.svg">Planning</a></li>
+    <header>
+        <nav>
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <ul class="menu_nav">
+                <li>
+                    <a id="main_feat" href="#">Features
+                        <img
+                             src="./images/icon-arrow-down.svg">
+                    </a>
+                    <ul class="main_feature hide_side_feature" id="main_sub_menu_feat">
+                        <li><a href="#"><img src="images/icon-todo.svg">Todo List</a></li>
+                        <li><a href="#"><img src="images/icon-calendar.svg">Calender</a></li>
+                        <li><a href="#"><img src="images/icon-reminders.svg">Reminders</a></li>
+                        <li><a href="#"><img src="images/icon-planning.svg">Planning</a></li>
                     </ul>
-                </div>
-            </li>
-            <li id="company"><a href="#" class="company" id="drop_comp">Company<span class="drop_img"><img id="drop_img_comp" src="./images/icon-arrow-down.svg"></span></a>
-                <div class="drop_menu drop_menu_hide">
-                    <ul>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Blog</a></li>
+                </li>
+                <li>
+                    <a id="main_comp" href="#">Company
+                        <img
+                             src="./images/icon-arrow-down.svg">
+                    </a>
+                    <ul class="main_feature hide_side_feature" id="main_sub_menu_comp">
+                        <li><a href="#">Todo List</a></li>
+                        <li><a href="#">Calender</a></li>
+                        <li><a href="#">Reminders</a></li>
+                        <li><a href="#">Planning</a></li>
                     </ul>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="btn_nav">
+                <li><a href="#" class="login">Login</a></li>
+                <li><a href="#" class="reg">Register</a></li>
+            </ul>
+            <div class="ham">
+                <img src="images/icon-menu.svg" id="open">
+                <div class="side_menu" id="menu">
+                    <img src="images/icon-close-menu.svg" id="close">
+                    <ul>
+                        <li>
+                            <a id="side_main_feat" href="#">Features
+                                <img id="side_img_feat"
+                                     src="./images/icon-arrow-down.svg">
+                            </a>
+                            <ul class="side_feature hide_side_feature" id="sub_menu_feat">
+                                <li><a href="#"><img src="images/icon-todo.svg">Todo List</a></li>
+                                <li><a href="#"><img src="images/icon-calendar.svg">Calender</a></li>
+                                <li><a href="#"><img src="images/icon-reminders.svg">Reminders</a></li>
+                                <li><a href="#"><img src="images/icon-planning.svg">Planning</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="side_main_comp" href="#">Company
+                                <img id="side_img_comp"
+                                     src="./images/icon-arrow-down.svg">
+                            </a>
+                            <ul class="side_feature hide_side_feature" id="sub_menu_comp">
+                                <li><a href="#">Todo List</a></li>
+                                <li><a href="#">Calender</a></li>
+                                <li><a href="#">Reminders</a></li>
+                                <li><a href="#">Planning</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About</a></li>
+
+                    </ul>
+                    <div class="btns">
+                        <a href="#" class="login">Login</a>
+                        <a href="#" class="reg">Register</a>
+                    </div>
                 </div>
-            </li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        <ul class="btn_nav">
-            <li><a href="#" class="login">Login</a></li>
-            <li><a href="#" class="reg">Register</a></li>
-        </ul>
-    </nav>
-</header>
+
+            </div>
+        </nav>
+    </header>
 
     <section class="intro">
         <div class="intro_text">
             <h1>Make remote work</h1>
-            <p>Get your team in sync. no matter your location. Streamline processes. create team rituals and watch productivity soar.</p>
+            <p>Get your team in sync. no matter your location. Streamline processes. create team rituals and watch
+                productivity soar.</p>
             <button class="learn_more">Learn more</button>
             <div class="clients">
                 <ul>
@@ -59,9 +104,9 @@
                 </ul>
             </div>
         </div>
-        <img src="./images/image-hero-desktop.png" alt="hero image" class="mobile">
+        <img src="./images/image-hero-mobile.png" alt="hero image" class="mobile">
         <img src="./images/image-hero-desktop.png" alt="illustration" class="desktop">
-        </section>
+    </section>
 </main>
 <script src="main.js"></script>
 </body>
